@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  width: 48vw;
+  height: 0.25vh;
+  background-color: darkgreen;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  width: 50vw;
+  background-color: cornsilk;
+  border-radius: 5%;
+  filter: drop-shadow(10px 5px 10px rgb(50, 50, 50));
+}
+
+#page-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#page-picture > img {
+  width: 20vw;
+  border-radius: 50%;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h3 {
+  font-family: 'Trebuchet MS';
+  margin: 0.5em 0em;
+}
+
+figcaption,
+p {
+  font-family: 'Tahoma';
+  text-align: center;
+}
