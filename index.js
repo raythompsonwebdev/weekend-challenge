@@ -37,9 +37,6 @@ Update the content of the `figcaption` to give a description of your image.
 
 const image = document.querySelector('#page-picture').children;
 console.log(image[0]);
-
-
-
 // STEP THREE
 
 /*
