@@ -53,12 +53,25 @@ Insert an ordered list with some details about yourself
 const about = document.querySelector('#about-section').children;
 const aboutPage = document.querySelector('#about-section');
 
-console.log(about);
+let text = [
+  'May name is Raymond',
+  'I live in London',
+  'I enjoy Web Development',
+  'I Love Marvel movies',
+  'I love standup comedy'
+];
 
-let oldElement = about[0];
+let oldElement = about[1];
 let ul = document.createElement('ul');
 let li = document.createElement('li');
-let list = ul.appendChild(li);
+let list;
+
+for (var i = 0; i < text.length; i++) {
+  console.log(i);
+  li.textContent += text[i];
+  list = ul.appendChild(li);
+}
+
 aboutPage.replaceChild(list, oldElement);
 
 // STEP FOUR
