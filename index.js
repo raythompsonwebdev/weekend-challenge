@@ -36,8 +36,10 @@ Update the content of the `figcaption` to give a description of your image.
 // Your code here...
 
 const image = document.querySelector('#page-picture').children;
-//console.log(image[0]);
+image[0].setAttribute("src","https://github.com/raythompsonwebdev/weekend-challenge/blob/master/assets/images/raythompsonwebdev-co-uk.jpg?raw=true");
 image[1].textContent = 'Me when I was about 4 years Old';
+
+
 // STEP THREE
 
 /*
@@ -85,4 +87,3 @@ Replace the link within the <a> tag in the final section with a link to your own
 const paragraphLink = document.querySelector('.paragraph-text').childNodes;
 
 paragraphLink[1].setAttribute("href", "https://github.com/raythompsonwebdev");
-
