@@ -37,6 +37,7 @@ Update the content of the `figcaption` to give a description of your image.
 
 const image = document.querySelector('#page-picture').children;
 console.log(image[0]);
+image[1].textContent = 'this is a sentence to fill up the gap';
 // STEP THREE
 
 /*
@@ -48,6 +49,17 @@ Insert an ordered list with some details about yourself
 */
 
 // Your code here...
+
+const about = document.querySelector('#about-section').children;
+const aboutPage = document.querySelector('#about-section');
+
+console.log(about);
+
+let oldElement = about[0];
+let ul = document.createElement('ul');
+let li = document.createElement('li');
+let list = ul.appendChild(li);
+aboutPage.replaceChild(list, oldElement);
 
 // STEP FOUR
 
