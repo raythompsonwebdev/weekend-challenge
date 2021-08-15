@@ -36,8 +36,8 @@ Update the content of the `figcaption` to give a description of your image.
 // Your code here...
 
 const image = document.querySelector('#page-picture').children;
-console.log(image[0]);
-image[1].textContent = 'this is a sentence to fill up the gap';
+//console.log(image[0]);
+image[1].textContent = 'Me when I was about 4 years Old';
 // STEP THREE
 
 /*
@@ -61,18 +61,18 @@ let text = [
   'I love standup comedy'
 ];
 
-let oldElement = about[1];
-let ul = document.createElement('ul');
-let li = document.createElement('li');
-let list;
+const oldElement = about[1];
+const ul = document.createElement('ol');
+//const li = document.createElement('li');
+let i = 0;
 
-for (var i = 0; i < text.length; i++) {
-  console.log(i);
-  li.textContent += text[i];
-  list = ul.appendChild(li);
+for( i = 0; i <= text.length; i = i + 1 ){
+  var li = document.createElement('li');  // create a new li element
+  li.textContent = text[i];        // .textContent is mush shorter than creating a textNode
+  ul.appendChild( li );                   // every time append a new item
 }
 
-aboutPage.replaceChild(list, oldElement);
+aboutPage.replaceChild(ul, oldElement);
 
 // STEP FOUR
 
