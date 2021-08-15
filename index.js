@@ -20,8 +20,8 @@ Alter the content of the `h3` to give a brief description of you!
 // Write your code here...
 
 const header = document.querySelector('#page-header').children;
-header[0].textContent = 'Raymond';
-header[1].textContent = 'Big Dog';
+header[0].textContent = 'Raymond Thompson';
+header[1].textContent = 'Web Developer';
 
 // STEP TWO
 
@@ -81,3 +81,8 @@ Replace the link within the <a> tag in the final section with a link to your own
 */
 
 // Your code here...
+
+const paragraphLink = document.querySelector('.paragraph-text').childNodes;
+
+paragraphLink[1].setAttribute("href", "https://github.com/raythompsonwebdev");
+
